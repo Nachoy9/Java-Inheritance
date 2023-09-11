@@ -13,9 +13,7 @@ package Ejercicio3.Principal;
 
 import Ejercicio2.Entidades.Electrodomestico;
 import Ejercicio2.Servicios.*;
-
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Principal {
 
