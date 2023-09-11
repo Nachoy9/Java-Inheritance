@@ -45,12 +45,5 @@ public class Principal {
 
         System.out.println("La suma del precio de todos los electrodomesticos es: $ " + suma);
 
-
-
-
-
-
-
     }
-
 }
