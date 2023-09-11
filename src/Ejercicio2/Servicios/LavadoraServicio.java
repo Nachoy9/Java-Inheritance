@@ -9,6 +9,16 @@ public final class LavadoraServicio extends ElectrodomesticoServicio {
 
     public ArrayList<Lavadora> lavadoras = new ArrayList<>();
 
+    public Lavadora generarLavadora(double precio, double peso, String color, String consumoEnergetico, double carga) {
+
+        Lavadora lavadora = new Lavadora(precio, peso, color, consumoEnergetico, carga);
+
+        lavadora.setPrecio(_precioFinal(lavadora));
+
+        return lavadora;
+
+    }
+
     public void crearLavadora(Scanner input) {
 
         Lavadora lavadora = new Lavadora();

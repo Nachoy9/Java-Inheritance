@@ -10,6 +10,15 @@ public class TvServicio extends ElectrodomesticoServicio {
 
     public ArrayList<Televisor> televisores = new ArrayList<>();
 
+    public Televisor generarTelevisor(double precio, double peso, String color, String consumoEnergetico, double resolucion, boolean tdt) {
+
+        Televisor televisor = new Televisor(precio, peso, color, consumoEnergetico, resolucion, tdt);
+
+        televisor.setPrecio(_precioFinal(televisor));
+
+        return televisor;
+    }
+
     public void crearTelevisor(Scanner input) {
 
         Televisor televisor = new Televisor();
